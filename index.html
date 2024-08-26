@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto+</title>
+    <link rel="stylesheet" href="./estilos/design.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="section_principal"> <!--SECTION GENERAL -->
+            <img class="imagen_letra_alura" src="./imagenes/letra A alura.png"> <!--muestra la imagen de Alura -->
+            <section class="section_texto_escribir"> <!--SECTION DOS -->
+                <h1 class="ingresar_texto">Ingrese el texto a encriptar</h1> <!--aqui se mostrara el texto que escribamos -->
+                <textarea  id="mensaje" placeholder="Escriba aqui" rows="10" cols="50" class="area_escribir"> </textarea><!--aqui se mostrara el texto que escribamos -->
+                <img class="imagen_aviso" src="./imagenes/imagen aviso.png">
+                <div class="contenedor_botones">
+                    <button onclick="encriptar()" class="boton1" enabled >Encriptar</button>
+                    <button onclick="desencriptar()" class="boton2" enabled >Desencriptar</button>
+                </div>
+            </section>
+            <section class="section_texto_mostrar"><!--SECTION TRES -->
+                <img id="imagen" class="imagen_columa_tres" src="./imagenes/Muñeco.png">
+                <section class="texto_mensajes_encriptar">
+                    <h1 id="texto_a_quitar" class="texto_no_encontrado"> Aqui aparecera el <br> texto encriptado</h1>
+                    <p  id="resultado" class="ingresa_el_texto">Ingresa el texto que desees encriptar o <br> desencriptar</p>
+                  
+                </section>
+                <button onclick="copiar()" class="boton3" enabled >Copiar</button>
+            </section>
+        </section>
+    </main>
+    <script src="encriptador.js" defer></script>
+</body>
+</html>
