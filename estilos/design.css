@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    background-color: #E5E5E5;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.section_principal{ /*en él estamso construyendo todo */
+    display: flex;
+    flex-direction: row; 
+    height: 100vw;
+    width: 100vh;
+}
+.imagen_letra_alura{ /* imagen que muestra el logo de alura */
+    width: 7.5rem;
+    height: 3rem;
+    padding-top: 2.5rem;
+   
+}
+.section_texto_escribir{ /*seccion para escribir lo que encriptaremos*/
+    display: flex;
+    flex-direction: column;
+}
+.ingresar_texto{
+    padding: 0%;
+    margin: 0%;
+    margin-left: 5rem;
+    margin-top: 5rem;
+    font-family: "Inter";
+    font-size: 3rem;
+    font-weight: 300;
+    color: #0A3871;
+}
+.area_escribir{ /*texto para ingresar*/
+    padding: 0%;
+    margin: 0%;
+    color: darkblue;
+    font-family: "Inter";
+    font-weight: 300;
+    margin-top: 2.5rem;
+    margin-left: 5rem;
+    font-size: 2rem;
+    width: 34.25rem;
+    height: 3rem;
+    background-color: #E5E5E5;
+    border: 0.2rem solid;
+    border-radius: 1.5rem;
+    border-color: #0A3871;
+    height: 37.5rem;
+}
+.imagen_aviso{
+    width: 14.3125rem;
+    height: 1.125rem;
+    margin-left: 5rem;
+    margin-top: 5.6875rem;
+}
+.contenedor_botones{
+    margin-left: 5rem;
+    margin: 1rem;
+    width: 42.5rem;
+    height: 4.1875rem;
+    margin-right: 2rem;
+}
+.boton1{
+    width: 20.5rem;
+    height: 4.1875rem;
+    background-color: #0A3871;
+    color: aliceblue;
+    font-family: "Inter";
+    font-size: 1rem;
+    border:0.125rem solid;
+    border-radius: 1.5rem;
+}
+.boton2{
+    width: 20.5rem;
+    height: 4.1875rem;
+    background-color: #D8DFE8;
+    color: darkblue;
+    font-family: "Inter";
+    font-size: 1rem;
+    border:0.125rem solid;
+    border-radius: 1.5rem;
+}
+.boton3{
+    width: 20.5rem;
+    height: 4.1875rem;
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.61);
+    font-family: "Inter";
+    font-size: 1rem;
+    border:0.125rem solid;
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+}
+.section_texto_mostrar{     /*seccion donde se mostrara lo que encriptamos*/
+    background-color: #FFFFFF;
+    width: 25rem;
+    height: 59rem;
+    margin-top: 2.5rem;
+    margin-right: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    border: 0.125rem ;
+    border-radius: 2rem;
+    align-items: center;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0, 0.5);
+}
+.imagen_columa_tres{
+    width: 20rem;
+    height: 19rem;
+    margin-top: 15.1875rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: block;
+}
+.texto_no_encontrado{
+    color: #000000;
+    font-family: "inter";
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.ingresa_el_texto{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Inter";
+}
+
+@media(max-width:18.75rem){ /* Ajuste de tamaño para celular*/
+    .section_principal{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .imagen_columa_tres{
+        display: none;
+    }
+    .area_escribir{
+        width: 20.25rem;
+        margin-left: 2rem;
+        height: 21.875rem;
+    }
+    .ingresar_texto{
+        font-size: 2rem;
+        margin-left: 2rem;
+    }
+    .texto_no_encontrado{
+        font-size: 1.2rem;
+    }
+    .ingresa_el_texto{
+        font-size: 1rem ;
+    }
+    .imagen_aviso{
+        margin-top: 1rem;
+    }
+    .contenedor_botones{
+        display: flex;
+        flex-direction: column;
+        width: 21.4375rem;
+        height: 9.875rem;
+        margin-bottom: 0rem;
+        margin-left: 2rem;
+    }
+    .boton1{
+        height: 4.1875rem;
+        margin-bottom: 0.5rem;
+    }
+    .section_texto_mostrar{
+        height: 11.625rem;
+        margin: 0rem;
+        width: 21rem !important; 
+    }
+    .boton3{
+        height: 4.1875rem;
+        margin-bottom: 0.5rem;
+    }
+   
+}
+@media(max-width:48rem){ /*Configuracion de tamaño para tablet*/ 
+    .section_principal{
+        flex-direction: column;
+    }
+    .contenedor_botones{
+        margin-left: 3rem;
+    
+    }
+    .imagen_aviso{
+        margin-top: 2rem;
+    }
+    .section_texto_mostrar{
+        margin: 0rem 2.5rem 0rem 2.5rem;
+        width: 43rem;
+        height: 8.3125rem;
+    }
+    .imagen_columa_tres{
+        display: none;
+    }
+    .boton3{
+        height: 4.1875rem;
+        margin-bottom: 0.5rem;
+    }
+}
